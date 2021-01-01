@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <link href="cookies.php">
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Login | Islamic Institute.tk</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link type="image/x-icon" href="https://i.pinimg.com/474x/92/01/ed/9201edba05a895b27d35bcf2275a6685.jpg" rel="shortcut icon">
+	<meta name="description" content="An easy place for you to learn the best Islamic Kowledge Online, for Free!">
+    <style>
+        .inputsonly{
+            border: none;
+            border-bottom: 2px solid red;
+            box-sizing: border-box 58px;
+            
+        }
+        .inputsonly:hover {
+            background-color: whitesmoke;
+        }
+        .movetomakelookgood{
+            margin-left: 89px;   
+            margin-top: -45px;
+        }
+        body{
+            margin: 55px;
+        }
+        body:hover{
+            background-color: whitesmoke;
+        }
+        .inputsonly{
+            width: 55%;
+            box-sizing: 559px;
+        }
+        #loginbutton{
+            border: none;
+            background-color: black;
+            color: white;
+            width: 56%;
+        }
+        #loginbutton:hover{
+            background-color: white;
+            color: black;
+        }
+    </style>
+    </head>
+    <body>
+        <h3>Islamic Institute Login</h3><h4><a target="_blank" href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAMAADQKzbJURFU1Q1JEMkg2ODlTU0FaTDhOTjJIUVo0OC4u">New User? Sign Up</a></h4><br><br>
+        <div class="movetomakelookgood">
+	<form>
+            <input type="email" id="email" class="inputsonly" required placeholder="Email"><br><br>
+            <input type="password" id="password" required class="inputsonly" placeholder="Password"><br>
+            <input type="submit" onclick="run()" value="Login >>" id="loginbutton">
+	</form>
+        </div>
+        
+        <script>
+            function run(){
+                var email1 = document.getElementById("email").value;
+                var pass1 = document.getElementById("password").value;
+                window.open("/users/mains","_self");
+            }
+            document.cookie = "username=Roha Riaz";
+            document.cookie = "username=Omar Riaz";
+            document.cookie = "username=Shayan Saeed";
+            document.cookie = "username=Nadiya Saeed";
+            document.cookie = "username=Izma Saeed";
+        </script>
+	    <script src="https://github.com/goodcodingstudios/islamic-institute/blob/main/script.js"></script>
+    </body>
+</html>

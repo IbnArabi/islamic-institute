@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="A place where you can see my ongoing experiments">
+        <title>Science Experiments | Islamic Institute.tk</title>
+        <link type="image/x-icon" href="https://i.pinimg.com/474x/92/01/ed/9201edba05a895b27d35bcf2275a6685.jpg" rel="shourtcut icon">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Texturina:wght@100&display=swap" rel="stylesheet">
+        <!---In the name of Allah--->
+        <!---Current project, Hydrogen Pyroxide--->
+    </head>
+    <body>
+        <div class="navbar">
+            <a href="/users/main">Home</a>
+            <a href="/other-stuff-to-do/mustknowinfo">News</a>
+            <div class="dropdown">
+              <button class="dropbtn" onclick="myFunction()" onclick="change_text()" id="fa-fa-button12">&nbsp;Messages&nbsp;<div id="setthenumber">&nbsp;1&nbsp;</div>
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content" id="myDropdown">
+                <p>Mixing bacteria with Hydrogen Peroxide</p>
+                <button onclick="change_text()" id="fa-button1234">Mark all as read</button>
+              </div>
+          </div>
+        </div>
+        <div id="main-content">
+            <h1>Science Experiments</h1>
+            <h2>Science experiments from all over Islamic-Institute</h2>
+            <br><Br>
+            <div id="content-area">
+                <h3>Site Map</h3>
+                <ul>
+                    <li><a href="#hydrogenpart">Bacteria mixed with Hydrogen Peroxide</a></li>
+                </ul>
+            </div>
+            <br><br><br><br><br><br><br>
+            <hr><hr>
+            <div id="hydrogenpart">
+                <h3>Hydrogen Peroxide & Bacteria</h3>
+                <hr>
+                <caption>Hydrogen Peroxide</caption>
+                <p>Hydrogen peroxide is a chemical compound with the formula H ₂O ₂. In its pure form, it is a very pale blue liquid, slightly more viscous than water. Hydrogen peroxide is the simplest peroxide. It is used as an oxidizer, bleaching agent, and antiseptic.</p><br>
+                <label for="question">What is the chemical formula of hydrogen Peroxide</label><br>
+                <input type="text" id="question" placeholder="Write answer without space in caps e.g H2O"><input type="submit" value="Submit Answer" id="fa-button1234" onclick="checkquestion()">
+                <h4>How hydrogen proxide helps us</h4>
+
+                <ol>
+                    <li>Kills bacteria, yeast, fungi, and protists</li>
+                    <li>Kills moles and bacteria in the mouth</li>
+                    <li>Helps the body recover faster</li>
+                </ol>
+                <h4>Project</h4>
+                <h2>Steps</h2>
+                <ol>
+                    <li>Grow Bacteria</li>
+                    <li>Add liquid Hydrogen Peroxide 10%</li>
+                    <li>Grow fungi</li>
+                    <li>Add Liquid Hydrogen Peroxide 10%</li>
+                </ol>
+                <h3>Projecto Meter</h3>
+                <label for="bacmeter">Progress:</label>
+                <meter value="0.06" id="bacmeter">6%</meter>
+            </div>
+        </div>
+
+        <script>
+            function change_text() {
+                document.getElementById("setthenumber").innerHTML = "0";
+            }
+            function myFunction() {
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
+            function checkquestion() {
+                var try1 = document.getElementById("question").value;
+
+                if(try1 === "H2O2" ){
+                    alert("Correct!\n You are a real scientist");
+                }
+                else {
+                    alert("Revise the text above the question, and you'll get it right in no time!");
+                }
+            }
+        </script>
+    </body>
+</html>
