@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <title>Passwords | MyPrivacy</title>
+    <link type="image/x-icon" href="https://i.pinimg.com/474x/92/01/ed/9201edba05a895b27d35bcf2275a6685.jpg" rel="shortcut icon">
+    <meta name="viewport" content="width=device-width">
+      <style>
+          #passwordshow{
+              padding: 5px;
+          }
+          #submitbutton{
+              height: 30px;
+              border: none;
+              background-color: greenyellow;
+              color: black;
+          }
+          #inputtedpass:hover{
+              text-shadow: 10px 10px solid blue;
+          }
+      </style>
+ </head>
+ <body>
+     <h1>You asked to show your passwords</h1><br><br>
+     <input type="password" id="passwordshow" placeholder="Password.." minlength="8" maxlength="10" required>
+     <input type="submit" onclick="proandshow()" value="Verify" id="submitbutton">
+     
+     <div id="styleforinfo">
+         <h3>Password:<nobr><div id="inputtedpass"></div></nobr></h3>
+     </div>
+     <script>
+         function proandshow(){
+             var passwordtoshow = document.getElementById("passwordshow").value;
+             document.getElementById("inputtedpass").innerHTML = passwordtoshow;
+             
+         }
+     </script>
+ </body>
+</html>
