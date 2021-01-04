@@ -1,0 +1,26 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+/*main content*/
+
+/*Body style*/
+body{
+    animation-name:background_style;
+    animation-duration:5s;
+    animation-iteration-count:infinite;
+    align-items:center;
+}
+
+input, select, button{
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+}
+
+/*Animation for body*/
+@keyframes background_style{
+    from{background-color:#1be039;}
+    to{background-color:#ededed;}
+}
